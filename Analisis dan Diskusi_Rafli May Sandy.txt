@@ -1,0 +1,13 @@
+Analisis:
+	Pada percobaan kali ini, ketika program di run akan menampilkan hasil berupa 3  frame yang terdiri dari frame utama, mask. dan result. Pada saat sebuah object berwarna merah terdeteksi oleh kamera maka pada frame result akan menampilkan warna merah sedangkan warna selain merah akan ditampilkan warna hitam. Pada frame mask, warna merah yang terdeteksi akan ditampilkan menjadi warna putih sedangkan warna selain merah akan ditampilkan warna hitam.
+	Sistem ini dapat mendeteksi dan memfilter warna merah karena menggunakan ruang warna HSV (Hue, Saturation, Value). Ketika kamera mengambil gambar dan mengubahnya ke format HSV, program akan mencari warna merah berdasarkan rentang Hue, Saturation, dan Value, lalu membuat masker biner yang menandai warna merah, setelah itu menggabungkan masker dengan gambar asli sehingga hanya warna merah yang terlihat.
+	Deteksi warna merah menggunakan HSV Color Filtering dapat diterapkan dalam Intelligent Control Systems untuk berbagai keperluan, salah satunya yaitu dalam navigasi dan kontrol robotik, yang mana menggunakan deteksi warna merah sebagai penanda (marker) untuk navigasi robot .
+Diskusi:
+1. AI dapat meningkatkan sistem control berbasis Computer Vision dengan cara meningkatkan akurasi dalam mendeteksi objek, contohnya adalah deep learning yang dapat mendeteksi objek dengan akurasi yang lebih tinggi. Selain itu, AI dapat mengontrol secara adaptif sehingga dapat menyesuaikan dengan lingkungan baru atau perubahan kondisi berdasarkan input dari Computer Vision.
+2. Kelebihan:
+• Metode deteksi objek berbasis warna relative sederhana dan cepat dalam mengimplementasikannya
+• Metode ini memiliki akurasi yang tinggi 
+Kekurangan:
+• Metode ini sangat senstife terhadap cahaya
+• Metode ini sulit dalam mendetksi warna objek yang bergerak cepat, dan rentan terhadap peruahan kamera
+3. Untuk meningkatkan akurasi pada sistem deteksi objek yaitu dapat memilih model deteksi yang digunakan dengan tepat dan menambahakan dataset yang berkualitas sebanyak mungkin agar hasil deteksi dapat lebih presisi.
